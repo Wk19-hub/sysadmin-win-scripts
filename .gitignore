@@ -1,0 +1,71 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+Error.txt
+success.txt
+OfflineMachineshost.txt
+
+# Temp files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Executables (if any remain)
+*.exe
+*.msi
+
+# Specific to scripts
+livePCs.txt
+deadPCs.txt
+# Keep computers.txt, servers.txt as they are inputs
+
+
+# My Ignore 
+mcafee-*/
+
+# Media and large binaries
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.mpg
+*.mpeg
+
+# Large installer / archive / package files
+*.msi
+*.msp
+*.cab
+*.msdb
+*.exe
+*.iso
+*.zip
+*.7z
+*.rar
+
+# Office and large binaries
+*.pptx
+*.xlsx
+*.docx
+
+# Keep local large media, don't track specific large folders
+/powershell-utilities/PowerShell/*.mp4
+/work-at-home-scripts/**/OnexAgentSetup*/**

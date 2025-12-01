@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BladeMigrationInfo>
+	<ConflictingProducts>
+		<ProductInfo  ProductName="HIPS" OverrideSwitch="HIPS" RebootOnOverride="Yes">
+			<ProductCodes>
+				<ProductCode Description="7.0">{B332732A-4958-41DD-B439-DDA2D32753C5}</ProductCode>
+			</ProductCodes>
+		</ProductInfo>
+		<ProductInfo  ProductName="Deep Defender">
+			<ProductCodes>
+				<ProductCode Description="X86">{EC296556-ABD6-4745-8219-E03C281E4B80}</ProductCode>,
+				<ProductCode Description="X64">{BAACBBDA-6C02-452A-8F56-0DB1B7C79A06}</ProductCode>
+			</ProductCodes>
+		</ProductInfo>
+	<ProductInfo  ProductName="McAfee VirusScan Enterprise">
+      <ProductCodes>
+        <ProductCode Description="8.5">{35C03C04-3F1F-42C2-A989-A757EE691F65}</ProductCode>
+      </ProductCodes>
+    </ProductInfo>
+    <ProductInfo  ProductName="VSE for Storage">
+      <ProductCodes>
+        <ProductCode Description="">{46707A8D-2FB7-4113-930C-B5C16B8051E8}</ProductCode>
+      </ProductCodes>
+    </ProductInfo>
+    <ProductInfo  ProductName="VSE for SAP">
+      <ProductCodes>
+        <ProductCode Description="">{40005903-41D2-43C3-90BA-248545BC8B88}</ProductCode>
+      </ProductCodes>
+    </ProductInfo>
+    <ProductInfo  ProductName="OVI">
+      <ProductCodes>
+        <ProductCode Description="2.0">{64F5A0C3-AF65-44CE-BCBB-80AEE9E7B794}</ProductCode>
+        <ProductCode Description="2.0.1">{3ED5F56B-0FD7-4AB0-811B-844A86FAA998}</ProductCode>
+        <ProductCode Description="2.1">{B78E80C5-7DBE-4358-B30C-C065E1574ACF}</ProductCode>
+      </ProductCodes>
+    </ProductInfo>
+    <ProductInfo  ProductName="Management for Optimized Virtual Environments Multiplatform Endpoint">
+      <ProductCodes>
+        <ProductCode Description="">{291E5CBE-DC09-48AC-B3F6-1997B3113966}</ProductCode>
+      </ProductCodes>
+    </ProductInfo>
+    <ProductInfo  ProductName="Management for Optimized Virtual Environments Scheduler">
+      <ProductCodes>
+        <ProductCode Description="">{D33E5807-6F78-4931-8082-D66B114E259C}</ProductCode>
+      </ProductCodes>
+    </ProductInfo>
+	</ConflictingProducts>
+	
+	<MigrationSourceProducts>	
+		<ProductInfo ProductName="McAfee Endpoint Security" RemoveProduct="true" Reboot="No" ReferenceCountingUsed="true">
+			<ModuleBuildInfo Key="Software\McAfee\Endpoint\Common" BuildValue="BuildNumber" PackageValue="PackageNumber"> <!-- Value type should be string-->
+				<BuildValues>319.2,353.10,384.1,541.1,741.1,828.1</BuildValues>
+			</ModuleBuildInfo>
+			<ModuleBuildInfo Key="Software\McAfee\Endpoint\AV" BuildValue="BuildNumber" PackageValue="PackageNumber"> <!-- Value type should be string-->
+				<BuildValues>331.4,390.3,390.4,603.1,824.1,901.1</BuildValues>
+			</ModuleBuildInfo>
+			<ModuleBuildInfo Key="Software\McAfee\Endpoint\Firewall" BuildValue="BuildNumber" PackageValue="PackageNumber"> <!-- Value type should be string-->
+				<BuildValues>260.3,289.1,289.2,427.1,581.1,650.1</BuildValues>
+			</ModuleBuildInfo>
+			<ModuleBuildInfo Key="Software\McAfee\Endpoint\Web Control" BuildValue="BuildNumber" PackageValue="PackageNumber" X86="true"> <!-- Value type should be string-->
+				<BuildValues>298.5,336.1,382.1,491.1,658.1,723.1</BuildValues>
+			</ModuleBuildInfo>
+			<ModuleBuildInfo Key="Software\McAfee\Endpoint\ATP" BuildValue="BuildNumber" PackageValue="PackageNumber"> <!-- Value type should be string-->
+				<BuildValues>431.3,500.1,544.1,751.1,954.1,1035.1</BuildValues>
+			</ModuleBuildInfo>							
+			<ProductCodes>
+				<ProductCode Description="ATP">{377DA1C7-79DE-4102-8DB7-5C2296A3E960}</ProductCode>
+				<ProductCode Description="Threat Protection">{820D7600-089E-486B-860F-279B8119A893}</ProductCode>
+				<ProductCode Description="Firewall">{6F88C6E9-CAD0-4D03-99E1-161383F9AD6F}</ProductCode>
+				<ProductCode Description="Web Control">{5974413A-8D95-4D64-B9EE-40DF28186445}</ProductCode>
+			</ProductCodes>
+			<DependencyCodes>
+				<ProductCode Description="Endpoint Security Platform">{B16DE18D-4D5D-45F8-92BD-8DC17225AFD8}</ProductCode>
+			</DependencyCodes>	
+		</ProductInfo>
+		<ProductInfo ProductName="McAfee TPSConnector" RemoveProduct="true" Reboot="No">
+			<ProductCodes>
+				<ProductCode Description="10.0" Preserve="false">{CD596AD1-7A2D-4202-AB2D-7DCCF13F9DF1}</ProductCode>
+			</ProductCodes>			
+		</ProductInfo>
+		
+		<ProductInfo ProductName="Threat Intelligence Exchange Module for Virus Scan Enterprise" RemoveProduct="true" Reboot="No">
+			<ProductCodes>
+				<ProductCode Description="1.0" Preserve="false">{CB4BEBDB-7B09-4312-B169-602285BA5B29}</ProductCode>
+		</ProductCodes>			
+		</ProductInfo>
+		
+		<ProductInfo ProductName="McAfee VirusScan Enterprise" RemoveProduct="true" Reboot="No">
+			<PreservingSettingsInfo Archive="TP_Migration_Plugin.zip" Plugin="MigrationPluginTP.dll" ManageSettings="3" ModuleName="TP"/>
+			<ProductCodes>
+				<ProductCode Description="8.7" Preserve="false">{147BCE03-C0F1-4C9F-8157-6A89B6D2D973}</ProductCode>
+				<ProductCode Description="8.8" Preserve="true">{CE15D1B6-19B6-4D4D-8F43-CF5D2C3356FF}</ProductCode>
+			</ProductCodes>			
+		</ProductInfo>
+		
+		<ProductInfo ProductName="McAfee Site Advisor Enterprise" RemoveProduct="true" Reboot="No">
+		<PreservingSettingsInfo Archive="WC_Migration_Plugin.zip" Plugin="WCMigrationPlugin.dll" ManageSettings="3" ModuleName="WC"/>
+			<ProductCodes>
+				<ProductCode Description="3.0" Preserve="false">{00FC3F65-86EB-475E-881F-A5B1CF731320}</ProductCode>
+				<ProductCode Description="3.5" Preserve="true">{C44506FC-B846-4782-AC2B-8C30236CE075}</ProductCode>
+			</ProductCodes>
+		</ProductInfo>
+		
+		<ProductInfo  ProductName="HIPS" OverrideSwitch="HIPS" RemoveProduct="false" Reboot="No">
+			<PreservingSettingsInfo Archive="FW_Migration_Plugin.zip" Plugin="MigrationPluginFW.dll" ManageSettings="3" ModuleName="FW"/>
+			<ProductCodes>
+				<ProductCode Description="8.0 X86" Preserve="true">{6B005DF6-6B6E-4551-B632-B0001DF50499}</ProductCode>
+				<ProductCode Description="8.0 X64" Preserve="true">{D2B9C003-A3CD-44A0-9DE5-52FE986C03E5}</ProductCode>				
+			</ProductCodes>
+		</ProductInfo>
+		
+		
+	</MigrationSourceProducts>  
+</BladeMigrationInfo>
+
+<!-- ManageSettings = 1 Plugin is used for Preserving Settings only. -->
+<!-- ManageSettings = 2 Plugin is used for Restoring  Settings only. -->
+<!-- ManageSettings = 3 Plugin is used for both Preserving and Restoring  Settings -->

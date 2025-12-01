@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InstallationPackage FormatVersion="8.0">
+  <Product License="NotRequired" AppClass="Application">
+    <Release Version="8.5.345.24" BuildDate="2017-09-07" BuildNumber="2" Type="General"/>
+    <Name>
+      <Long>Genesys SR Service</Long>
+      <Nickname>SRService</Nickname>
+    </Name>
+    <Language LocaleId="ENU">
+      <Name>English (United States)</Name>
+    </Language>
+    <ReleaseNotes Place="Web" WebDBId="." FileName="release_notes.html"/>
+  </Product>
+  <Platforms OSGroupName="windows">
+    <Computer Type="Intel 32 bit">
+      <OS Name="Windows Server 2008" CfgOSType="17"/>
+      <OS Name="Windows Server 2012" CfgOSType="17"/>
+      <OS Name="Windows 7"/>
+      <OS Name="Windows 8"/>
+      <OS Name="Windows 10"/>
+    </Computer>
+    <Computer Type="Intel EM64T">
+      <OS Name="Windows Server 2008" CfgOSType="17"/>
+      <OS Name="Windows Server 2012" CfgOSType="17"/>
+      <OS Name="Windows 7"/>
+      <OS Name="Windows 8"/>
+      <OS Name="Windows 10"/>
+    </Computer>
+  </Platforms>
+  <InstallationPgm>
+    <Release Version="8.5.001.00" Date="2017-09-07"/>
+    <Name>
+      <Long>Genesys SR Service Installation Project</Long>
+      <Nickname>SRService</Nickname>
+    </Name>
+    <Language LocaleId="ENU">
+      <Name>English (United States)</Name>
+    </Language>
+  </InstallationPgm>
+</InstallationPackage>

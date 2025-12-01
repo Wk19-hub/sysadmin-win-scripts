@@ -1,0 +1,17 @@
+<?xml version= "1.0" encoding = "UTF-8"?>
+<BackupRestoreXML version = "1.0" module="ESP">
+    <ProcessorArchitecture  Type = "X86">
+        <PreserveFile>
+            <FileName>*</FileName>
+            <FilePath>[COMMONAPPDATAFOLDER]\\McAfee\\Endpoint Security\\Logs</FilePath>
+            <RestorePath>[COMMONAPPDATAFOLDER]\\McAfee\\Endpoint Security\\Logs_Old</RestorePath>
+        </PreserveFile>
+    </ProcessorArchitecture>
+    <ProcessorArchitecture  Type = "X64">
+        <PreserveFile>
+            <FileName>*</FileName>
+            <FilePath>[COMMONAPPDATAFOLDER]\\McAfee\\Endpoint Security\\Logs</FilePath>
+            <RestorePath>[COMMONAPPDATAFOLDER]\\McAfee\\Endpoint Security\\Logs_Old</RestorePath>
+        </PreserveFile>
+    </ProcessorArchitecture>
+</BackupRestoreXML>

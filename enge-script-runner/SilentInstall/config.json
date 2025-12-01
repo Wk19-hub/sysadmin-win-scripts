@@ -1,0 +1,9 @@
+[
+{"name":"allowedHosts","value":"https://*.example.company.com"},
+{"name":"logLevel","value":"debug"}, 
+{"name":"certificate","value":"false"},
+{"name":"statusTimeout","value":"60"},
+{"name":"credentialsTimeout","value":"35"},
+{"name":"ip6","value":"false"},
+{"name":"authenticationPort","value":"8088"}
+]

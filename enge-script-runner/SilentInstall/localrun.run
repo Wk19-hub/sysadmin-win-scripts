@@ -1,0 +1,1 @@
+c:\temp\ip\setup.exe /s /z" -s 'c:\temp\ip\genesys_silent.ini' -sl 'c:\temp\ip\setup.log' -t 'c:\temp\ip\setup_wizard.log'" 

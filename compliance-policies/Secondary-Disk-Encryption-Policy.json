@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "title": "Secondary Disk Encryption Compliance",
+  "description": "Ensures all secondary internal drives are fully encrypted with BitLocker.",
+  "rules": [
+    {
+      "settingName": "secondary_drives_encrypted",
+      "operator": "IsEquals",
+      "dataType": "Boolean",
+      "operand": "true",
+      "moreInfoUrl": "https://learn.microsoft.com/mem/intune/protect/compliance-policy-create-windows",
+      "remediationStrings": [
+        {
+          "language": "en-US",
+          "title": "Enable BitLocker on Secondary Drives",
+          "description": "All secondary internal drives must be encrypted with BitLocker. Please enable BitLocker encryption on all non-system drives."
+        }
+      ]
+    }
+  ]
+}
