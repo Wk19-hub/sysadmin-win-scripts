@@ -65,7 +65,7 @@ mcafee-*/
 *.pptx
 *.xlsx
 *.docx
-
 # Keep local large media, don't track specific large folders
 /powershell-utilities/PowerShell/*.mp4
 /work-at-home-scripts/**/OnexAgentSetup*/**
+# (removed personal filename entries)
